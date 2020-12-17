@@ -28,6 +28,12 @@ const Portugal = {
   link: '/Portugal',
   icon: 'icon-home'
 };
+const France = {
+  text: 'France',
+  link: '/France',
+  icon: 'icon-home'
+};
+
 
 const Dashboard = {
     text: 'Dashboard',
@@ -422,6 +428,7 @@ export const menu = [
     Morocco,
     Spain,
     Portugal,
+    France,
     Dashboard,
     Widgets,
     headingComponents,

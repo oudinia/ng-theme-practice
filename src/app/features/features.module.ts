@@ -11,6 +11,7 @@ import { MehdiComponent } from './mehdi/mehdi/mehdi.component';
 import { MoroccoComponent } from './Morocco/morocco/morocco.component';
 import { SpainComponent } from './Spain/spain/spain.component';
 import { PortugalComponent } from './Portugal/portugal/portugal.component';
+import { FranceComponent } from './France/france/france.component';
 
 @NgModule({
     imports: [
