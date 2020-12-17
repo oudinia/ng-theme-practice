@@ -10,8 +10,8 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { Error404Component } from './error404/error404.component';
 import { Error500Component } from './error500/error500.component';
 
-/* Use this routes definition in case you want to make them lazy-loaded */
-/*const routes: Routes = [
+/* Use this features definition in case you want to make them lazy-loaded */
+/*const features: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'recover', component: RecoverComponent },
@@ -24,7 +24,7 @@ import { Error500Component } from './error500/error500.component';
 @NgModule({
     imports: [
         SharedModule,
-        // RouterModule.forChild(routes)
+        // RouterModule.forChild(features)
     ],
     declarations: [
         LoginComponent,

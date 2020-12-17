@@ -7,6 +7,9 @@ import { PagesModule } from './pages/pages.module';
 
 import { menu } from './menu';
 import { routes } from './routes';
+import { MehdiComponent } from './mehdi/mehdi/mehdi.component';
+import { MoroccoComponent } from './Morocco/morocco/morocco.component';
+import { SpainComponent } from './Spain/spain/spain.component';
 
 @NgModule({
     imports: [
@@ -20,7 +23,7 @@ import { routes } from './routes';
     ]
 })
 
-export class RoutesModule {
+export class FeaturesModule {
     constructor(public menuService: MenuService, tr: TranslatorService) {
         menuService.addMenu(menu);
     }

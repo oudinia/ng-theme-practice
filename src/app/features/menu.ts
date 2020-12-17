@@ -5,6 +5,24 @@ const Home = {
     icon: 'icon-home'
 };
 
+const Mehdi = {
+  text: 'Mehdi',
+  link: '/mehdi',
+  icon: 'icon-home'
+};
+
+const Morocco = {
+  text: 'Morocco',
+  link: '/Morocco',
+  icon: 'icon-home'
+};
+
+const Spain = {
+  text: 'Spain',
+  link: '/Spain',
+  icon: 'icon-home'
+};
+
 const Dashboard = {
     text: 'Dashboard',
     link: '/dashboard',
@@ -394,6 +412,9 @@ const headingMore = {
 export const menu = [
     headingMain,
     Home,
+    Mehdi,
+    Morocco,
+    Spain,
     Dashboard,
     Widgets,
     headingComponents,
