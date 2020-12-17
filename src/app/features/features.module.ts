@@ -10,6 +10,7 @@ import { routes } from './routes';
 import { MehdiComponent } from './mehdi/mehdi/mehdi.component';
 import { MoroccoComponent } from './Morocco/morocco/morocco.component';
 import { SpainComponent } from './Spain/spain/spain.component';
+import { PortugalComponent } from './Portugal/portugal/portugal.component';
 
 @NgModule({
     imports: [

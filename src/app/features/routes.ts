@@ -20,6 +20,7 @@ export const routes: Routes = [
             { path: 'mehdi', loadChildren: () => import('./mehdi/mehdi/mehdi.module').then(m => m.MehdiModule) },
             { path: 'morocco', loadChildren: () => import('./Morocco/morocco/morocco.module').then(m => m.MoroccoModule) },
             { path: 'spain', loadChildren: () => import('./Spain/spain/spain.module').then(m => m.SpainModule) },
+            { path: 'portugal', loadChildren: () => import('./Portugal/portugal/portugal.module').then(m => m.PortugalModule) },
             { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
             { path: 'widgets', loadChildren: () => import('./widgets/widgets.module').then(m => m.WidgetsModule) },
             { path: 'elements', loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
