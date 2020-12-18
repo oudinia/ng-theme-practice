@@ -12,6 +12,9 @@ import { MoroccoComponent } from './Morocco/morocco/morocco.component';
 import { SpainComponent } from './Spain/spain/spain.component';
 import { PortugalComponent } from './Portugal/portugal/portugal.component';
 import { FranceComponent } from './France/france/france.component';
+import { BelgiumComponent } from './Belgium/belgium/belgium.component';
+import { OhioComponent } from './Usa/Ohio/ohio/ohio.component';
+import { ColoradoComponent } from './Usa/colorado/colorado.component';
 
 @NgModule({
     imports: [

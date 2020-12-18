@@ -34,6 +34,34 @@ const France = {
   icon: 'icon-home'
 };
 
+const Belgium = {
+  text: 'Belgium',
+  link: '/Belgium',
+  icon: 'icon-home'
+};
+
+const Usa = {
+  text: 'Usa',
+  link: '/Usa',
+  icon: 'icon-map',
+  submenu: [
+    {
+      text: 'Alabama',
+      link: '/Usa/Alabama',
+      icon: 'icon-map',
+    },
+    {
+      text: 'Colorado',
+      link: '/Usa/Colorado',
+      icon: 'icon-map',
+    },
+    {
+      text: 'Ohio',
+      link: '/Usa/Ohio',
+      icon: 'icon-map',
+    }
+  ]
+};
 
 const Dashboard = {
     text: 'Dashboard',
@@ -429,6 +457,8 @@ export const menu = [
     Spain,
     Portugal,
     France,
+    Belgium,
+    Usa,
     Dashboard,
     Widgets,
     headingComponents,
