@@ -48,17 +48,14 @@ const Usa = {
     {
       text: 'Alabama',
       link: '/Usa/Alabama',
-      icon: 'icon-map',
     },
     {
       text: 'Colorado',
       link: '/Usa/Colorado',
-      icon: 'icon-map',
     },
     {
       text: 'Ohio',
       link: '/Usa/Ohio',
-      icon: 'icon-map',
     }
   ]
 };
