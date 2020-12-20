@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {queryParameters} from "../../../query-parameters";
 
 
-export const populationQS = 'population';
-export const climatQS = 'climat';
 
 @Component({
   selector: 'app-ohio',
@@ -17,9 +16,9 @@ export class OhioComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe(params => {
-      console.log('population', params[populationQS]);
-      console.log('climat', params[climatQS]);
+      console.log('population', params[queryParameters.population]);
+      console.log('climat', params[queryParameters.climat]);
     });
-    console.log(this.activatedRoute.snapshot.queryParams[populationQS]);
+    console.log(this.activatedRoute.snapshot.queryParams[queryParameters.population]);
   }
 }
