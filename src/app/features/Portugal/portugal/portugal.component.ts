@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {queryParameters} from "../../query-parameters";
+import {CityInfo} from "../../city-info";
 
-
-export const populationQS = 'population';
-export const climatQS = 'climat';
 
 @Component({
   selector: 'app-portugal',
@@ -17,9 +16,13 @@ export class PortugalComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe(params => {
-      console.log('population', params[populationQS]);
-      console.log('climat', params[climatQS]);
+      const cityInfo = <CityInfo>{};
+      cityInfo.population = params[queryParameters.population];
+      cityInfo.climat = params[queryParameters.climat];
+
+      console.log(cityInfo);
+
     });
-    console.log(this.activatedRoute.snapshot.queryParams[populationQS]);
+    console.log(this.activatedRoute.snapshot.queryParams[queryParameters.population]);
   }
 }
