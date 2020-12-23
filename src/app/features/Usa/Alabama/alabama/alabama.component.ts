@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {queryParameters} from "../../../query-parameters";
+import {ManageQueryParamsService} from "../../../manage-query-params.service";
 
 
 
@@ -13,14 +14,17 @@ import {queryParameters} from "../../../query-parameters";
 
 export class AlabamaComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageQueryParamsService) {
   }
 
   ngOnInit(): void {
     this.activatedRoute.queryParams.subscribe(params => {
-      console.log('population', params[queryParameters.population]);
-      console.log('climat', params[queryParameters.climat]);
+      const cityInfo = this.manageQueryParamsService.buildCityInfo(params);
+
+      console.log(cityInfo);
+
     });
-    console.log(this.activatedRoute.snapshot.queryParams[queryParameters.population]);
+
   }
+
 }
