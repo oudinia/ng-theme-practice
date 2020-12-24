@@ -2,13 +2,16 @@ import {Injectable} from '@angular/core';
 import {cities, City, CityInfo} from "./city-info";
 import {queryParameters} from "./query-parameters";
 import {Params} from "@angular/router";
+import {of} from "rxjs";
+import {Observable} from "rxjs/Observable";
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ManageCityInfoService {
 
-  constructor() {
+  constructor(private httpClient: HttpClient) {
   }
 
   buildCityInfo(params: Params): CityInfo {
@@ -22,8 +25,15 @@ export class ManageCityInfoService {
     return cities;
   }
 
-  getCityInfoObservable(): City[] {
-    return cities;
+  getCityInfoObservable(): Observable<City[]> {
+    return of(cities);
   }
 
+  getCityInfoObservableV2(): Observable<City[]> {
+    return of(cities);
+  }
+
+  getCityInfoObservableV3(): Observable<City[]> {
+    return this.httpClient.get<Array<City>>('http://localhost:3000/cities');
+  }
 }

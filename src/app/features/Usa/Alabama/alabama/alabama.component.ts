@@ -3,6 +3,7 @@ import {ActivatedRoute} from "@angular/router";
 import {queryParameters} from "../../../query-parameters";
 import {ManageCityInfoService} from "../../../manage-city-info.service";
 import {City} from "../../../city-info";
+import {Observable} from "rxjs/Observable";
 
 
 @Component({
@@ -14,7 +15,9 @@ import {City} from "../../../city-info";
 
 export class AlabamaComponent implements OnInit {
   cities: City[] = [];
-
+  citiesOf: Observable<City[]>;
+  citiesOfV2: City[] = [];
+  citiesOfV3: Observable<City[]>;
 
   constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageCityInfoService) {
   }
@@ -28,8 +31,16 @@ export class AlabamaComponent implements OnInit {
     });
 
     this.cities = this.manageQueryParamsService.getCityInfo();
+    this.citiesOf = this.manageQueryParamsService.getCityInfoObservable();
+    this.citiesOfV3 = this.manageQueryParamsService.getCityInfoObservableV3();
+
+    this.manageQueryParamsService.getCityInfoObservableV2().subscribe(data => {
+      this.citiesOfV2 = data;
+    });
 
     console.log(this.cities);
+    console.log(this.citiesOf);
+    console.log(this.citiesOfV2);
   }
 
 }
