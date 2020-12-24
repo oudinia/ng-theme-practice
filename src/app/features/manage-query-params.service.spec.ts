@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ManageQueryParamsService } from './manage-query-params.service';
+import { ManageCityInfoService } from './manage-city-info.service';
 
 describe('ManageQueryParamsService', () => {
-  let service: ManageQueryParamsService;
+  let service: ManageCityInfoService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ManageQueryParamsService);
+    service = TestBed.inject(ManageCityInfoService);
   });
 
   it('should be created', () => {

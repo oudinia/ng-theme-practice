@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {queryParameters} from "../../../query-parameters";
-import {ManageQueryParamsService} from "../../../manage-query-params.service";
-
+import {ManageCityInfoService} from "../../../manage-city-info.service";
+import {City} from "../../../city-info";
 
 
 @Component({
@@ -13,8 +13,10 @@ import {ManageQueryParamsService} from "../../../manage-query-params.service";
 
 
 export class AlabamaComponent implements OnInit {
+  cities: City[] = [];
 
-  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageQueryParamsService) {
+
+  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageCityInfoService) {
   }
 
   ngOnInit(): void {
@@ -25,6 +27,9 @@ export class AlabamaComponent implements OnInit {
 
     });
 
+    this.cities = this.manageQueryParamsService.getCityInfo();
+
+    console.log(this.cities);
   }
 
 }

@@ -1,12 +1,12 @@
 import {Injectable} from '@angular/core';
-import {CityInfo} from "./city-info";
+import {cities, City, CityInfo} from "./city-info";
 import {queryParameters} from "./query-parameters";
 import {Params} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ManageQueryParamsService {
+export class ManageCityInfoService {
 
   constructor() {
   }
@@ -17,4 +17,13 @@ export class ManageQueryParamsService {
     cityInfo.climat = params[queryParameters.climat];
     return cityInfo;
   }
+
+  getCityInfo(): City[] {
+    return cities;
+  }
+
+  getCityInfoObservable(): City[] {
+    return cities;
+  }
+
 }

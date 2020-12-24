@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
 import {queryParameters} from "../../query-parameters";
 import {CityInfo} from "../../city-info";
-import {ManageQueryParamsService} from "../../manage-query-params.service";
+import {ManageCityInfoService} from "../../manage-city-info.service";
 
 
 @Component({
@@ -12,7 +12,7 @@ import {ManageQueryParamsService} from "../../manage-query-params.service";
 })
 export class PortugalComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageQueryParamsService) {
+  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageCityInfoService) {
   }
 
   ngOnInit(): void {

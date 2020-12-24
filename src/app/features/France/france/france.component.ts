@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {ManageQueryParamsService} from "../../manage-query-params.service";
+import {ManageCityInfoService} from "../../manage-city-info.service";
 
 @Component({
   selector: 'app-france',
@@ -9,7 +9,7 @@ import {ManageQueryParamsService} from "../../manage-query-params.service";
 })
 export class FranceComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageQueryParamsService) {
+  constructor(private activatedRoute: ActivatedRoute, private manageQueryParamsService: ManageCityInfoService) {
   }
 
   ngOnInit(): void {
