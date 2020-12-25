@@ -36,4 +36,8 @@ export class ManageCityInfoService {
   getCityInfoObservableV3(): Observable<City[]> {
     return this.httpClient.get<Array<City>>('http://localhost:3000/cities');
   }
+
+  getCityMoroccoObservable(): Observable<City[]> {
+    return of(cities);
+  }
 }

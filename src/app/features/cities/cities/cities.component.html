@@ -1,0 +1,39 @@
+<p>List Of Cities</p>
+
+<!--
+<div class="mat-elevation-z8">
+ <table mat-table [dataSource]="citiesMorocco">
+
+  <ng-container matColumnDef="name">
+     <th mat-header-cell *matHeaderCellDef> Name </th>
+     <td mat-cell *matCellDef="let city of citiesMorocco | async "> {{city.name}} </td>
+   </ng-container>
+
+
+    <ng-container matColumnDef="weight">
+      <th mat-header-cell *matHeaderCellDef> Weight </th>
+      <td mat-cell *matCellDef="let cityC of citiesMorocco | async "> {{cityC.population}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef> Symbol </th>
+      <td mat-cell *matCellDef="let city of citiesMorocco| async "> {{city.climat}} </td>
+    </ng-container>
+
+
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>
+
+-->
+<ul>
+  <li *ngFor="let city of citiesMorocco | async "> {{city.city}} </li>
+</ul>
+<ul>
+  <li *ngFor="let city of citiesMorocco | async "> {{city.population}} </li>
+</ul>
+<ul>
+  <li *ngFor="let city of citiesMorocco | async "> {{city.climat}} </li>
+</ul>

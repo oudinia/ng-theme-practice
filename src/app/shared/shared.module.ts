@@ -57,7 +57,7 @@ import { JqcloudDirective } from './directives/jqcloud/jqcloud.directive';
     TooltipModule.forRoot(),
     PopoverModule.forRoot(),
     TypeaheadModule.forRoot(),
-    ToastrModule.forRoot(),
+    ToastrModule.forRoot()
   ],
   providers: [ColorsService],
   declarations: [

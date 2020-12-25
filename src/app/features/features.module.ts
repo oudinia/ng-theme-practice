@@ -15,6 +15,8 @@ import { FranceComponent } from './France/france/france.component';
 import { BelgiumComponent } from './Belgium/belgium/belgium.component';
 import { OhioComponent } from './Usa/Ohio/ohio/ohio.component';
 import { ColoradoComponent } from './Usa/colorado/colorado.component';
+import { CitiesComponent } from './cities/cities/cities.component';
+
 
 @NgModule({
     imports: [
