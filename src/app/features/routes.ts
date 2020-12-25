@@ -17,6 +17,13 @@ export const routes: Routes = [
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+            { path: 'mehdi', loadChildren: () => import('./mehdi/mehdi/mehdi.module').then(m => m.MehdiModule) },
+            { path: 'Morocco', loadChildren: () => import('./Morocco/morocco/morocco.module').then(m => m.MoroccoModule) },
+            { path: 'Spain', loadChildren: () => import('./Spain/spain/spain.module').then(m => m.SpainModule) },
+            { path: 'Portugal', loadChildren: () => import('./Portugal/portugal/portugal.module').then(m => m.PortugalModule) },
+            { path: 'France', loadChildren: () => import('./France/france/france.module').then(m => m.FranceModule) },
+            { path: 'Belgium', loadChildren: () => import('./Belgium/belgium/belgium.module').then(m => m.BelgiumModule) },
+            { path: 'Usa', loadChildren: () => import('./Usa/usa.module').then(m => m.UsaModule) },
             { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) },
             { path: 'widgets', loadChildren: () => import('./widgets/widgets.module').then(m => m.WidgetsModule) },
             { path: 'elements', loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
@@ -30,7 +37,7 @@ export const routes: Routes = [
         ]
     },
 
-    // Not lazy-loaded routes
+    // Not lazy-loaded features
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'recover', component: RecoverComponent },

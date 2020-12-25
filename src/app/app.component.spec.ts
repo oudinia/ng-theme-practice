@@ -7,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
-import { RoutesModule } from './routes/routes.module';
+import { FeaturesModule } from './features/features.module';
 import { APP_BASE_HREF } from '@angular/common';
 
 describe('App: Ng2angle', () => {
@@ -24,7 +24,7 @@ describe('App: Ng2angle', () => {
                 CoreModule,
                 LayoutModule,
                 SharedModule,
-                RoutesModule
+                FeaturesModule
             ],
             providers: [
                 { provide: APP_BASE_HREF, useValue: '/' }

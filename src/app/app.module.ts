@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
-import { RoutesModule } from './routes/routes.module';
+import { FeaturesModule } from './features/features.module';
 
 // https://github.com/ocombe/ng2-translate/issues/218
 export function createTranslateLoader(http: HttpClient) {
@@ -27,7 +27,7 @@ export function createTranslateLoader(http: HttpClient) {
         CoreModule,
         LayoutModule,
         SharedModule.forRoot(),
-        RoutesModule,
+        FeaturesModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,

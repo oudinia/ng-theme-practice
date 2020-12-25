@@ -5,6 +5,61 @@ const Home = {
     icon: 'icon-home'
 };
 
+const Mehdi = {
+  text: 'Mehdi',
+  link: '/mehdi',
+  icon: 'icon-home'
+};
+
+const Morocco = {
+  text: 'Morocco',
+  link: '/Morocco',
+  icon: 'icon-home'
+};
+
+const Spain = {
+  text: 'Spain',
+  link: '/Spain',
+  icon: 'icon-home'
+};
+
+const Portugal = {
+  text: 'Portugal',
+  link: '/Portugal',
+  icon: 'icon-home'
+};
+const France = {
+  text: 'France',
+  link: '/France',
+  icon: 'icon-home'
+};
+
+const Belgium = {
+  text: 'Belgium',
+  link: '/Belgium',
+  icon: 'icon-home'
+};
+
+const Usa = {
+  text: 'Usa',
+  link: '/Usa',
+  icon: 'icon-map',
+  submenu: [
+    {
+      text: 'Alabama',
+      link: '/Usa/Alabama',
+    },
+    {
+      text: 'Colorado',
+      link: '/Usa/Colorado',
+    },
+    {
+      text: 'Ohio',
+      link: '/Usa/Ohio',
+    }
+  ]
+};
+
 const Dashboard = {
     text: 'Dashboard',
     link: '/dashboard',
@@ -394,6 +449,13 @@ const headingMore = {
 export const menu = [
     headingMain,
     Home,
+    Mehdi,
+    Morocco,
+    Spain,
+    Portugal,
+    France,
+    Belgium,
+    Usa,
     Dashboard,
     Widgets,
     headingComponents,
